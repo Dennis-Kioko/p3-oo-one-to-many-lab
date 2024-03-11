@@ -69,7 +69,7 @@ def test_add_pet_checks_isinstance():
     with pytest.raises(Exception):
         owner.add_pet("Lucky")
 
-    Pet.all = []
+    Pet.all_= []
 
 def test_get_sorted_pets():
     """Test Owner class has method get_sorted_pets, sorting related pets by name"""
